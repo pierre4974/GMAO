@@ -1,4 +1,4 @@
-const CACHE = 'maintenance-poc-v3-20261110';
+const CACHE = 'maintenance-poc-v5-20261112';
 const CORE = ['./', './index.html', './app.js', './styles.css', './manifest.webmanifest', './icon.svg'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE)).then(() => self.skipWaiting()));
